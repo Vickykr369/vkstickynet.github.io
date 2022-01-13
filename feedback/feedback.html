@@ -1,0 +1,112 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feeback | Help us to understand the issues </title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" media="(min-width:426px) and (max-width:960px) " href="phone.css">
+    <link rel="stylesheet" media="(min-width:300px) and (max-width:425px) " href="320px phones.css">
+    <script src="https://kit.fontawesome.com/5629bc16ce.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <button id="back-btn"><a href="../index.html">↢ Go back</a></button>
+
+    <div id="main">
+        <h5>Welcome to Feeback session of our Website. </h5>
+        <h2>Give your Feeback here</h2>
+        <div id="question-1">
+            <i class="fas fa-file-signature"></i> Enter your registered name : <input type="text" name="" id="">
+        </div>
+        <div id="question-2">
+            <i class="far fa-eye"></i> You are visiting this website since : <span id="duration">
+
+                DATE : <select>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                    <option value="">6</option>
+                    <option value="">7</option>
+                    <option value="">8</option>
+                    <option value="">9</option>
+                    <option value="">10</option>
+                    <option value="">11</option>
+                    <option value="">12</option>
+                    <option value="">13</option>
+                    <option value="">14</option>
+                    <option value="">15</option>
+                    <option value="">16</option>
+                    <option value="">17</option>
+                    <option value="">18</option>
+                    <option value="">19</option>
+                    <option value="">20</option>
+                    <option value="">21</option>
+                    <option value="">22</option>
+                    <option value="">23</option>
+                    <option value="">24</option>
+                    <option value="">25</option>
+                    <option value="">26</option>
+                    <option value="">27</option>
+                    <option value="">28</option>
+                    <option value="">29</option>
+                    <option value="">30</option>
+                    <option value="">31</option>
+                </select> MONTH : <select>
+                    <option value="">Jan</option>
+                    <option value="">Feb</option>
+                    <option value="">Mar</option>
+                    <option value="">Apr</option>
+                    <option value="">May</option>
+                    <option value="">Jun</option>
+                    <option value="">Jul</option>
+                    <option value="">Aug</option>
+                    <option value="">Sep</option>
+                    <option value="">Oct</option>
+                    <option value="">Nov</option>
+                    <option value="">Dec</option>
+                </select> YEAR : <input type="number" value="2021" id="year"></span>
+        </div>
+        <div id="question-3">
+            <i class="fas fa-file"></i> Insert a screenshot of the problem that you are facing : <input type="file" id="pics" name="" hidden><label for="pics" id="pic"><i class="fas fa-link"></i>Attach a .png / .jpg / .pdf file only</label>
+        </div>
+        <div id="question-4">
+            <i class="fas fa-info"></i>&nbsp;&nbsp;&nbsp;<span id="q-2-s1">  Describe your issues shortly here: <br> <textarea name="" id="txt"></textarea></span>
+        </div>
+        <div id="question-5">
+            <i class="fas fa-phone"></i> Enter your registered Phone Number : <input id="phone" type="tel" name="" value="91+">
+        </div>
+        <div id="question-6">
+            <i class="fas fa-key"></i> <span id="q6-s1">Enter your password to continue : <input type="password" value="" placeholder="Enter here" id="password" ></span>
+        </div>
+        <div id="question-7">DO YOU LIKE OUR SERVICES :
+            <p>YES <input type="radio" name="opinion" id=""> NO <input type="radio" name="opinion" id=""></p>
+        </div>
+        <button id="subm">
+             SUBMIT
+        </button>
+
+    </div>
+    <script>
+        let submit = document.getElementById('subm');
+        submit.addEventListener('click', function() {
+            let password = document.getElementById('password').value;
+            if (password == "") {
+                swal("Please enter your password", "⚠", "error")
+            } else {
+                swal("Thanks for your feedback", "", "success")
+            }
+        })
+    </script>
+
+
+</body>
+
+</html>

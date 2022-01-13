@@ -1,0 +1,44 @@
+* {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+#main {
+    padding-left: 1px;
+}
+
+#year {
+    width: 28px;
+}
+
+#duration {
+    display: block;
+}
+
+#pic {
+    width: 50%;
+    font-size: 12px;
+}
+
+#txt {
+    font-size: 12px;
+    max-width: 90%;
+    min-width: 90%;
+    min-height: 75px;
+    max-height: 75px;
+}
+
+input {
+    font-size: 12px;
+}
+
+button {
+    width: 30%;
+    height: 40px;
+    margin-left: 20px;
+}
+
+#question-7 {
+    text-align: left;
+    font-size: normal;
+}
