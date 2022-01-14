@@ -17,15 +17,11 @@
     let click = document.getElementById('i');
     let menu = document.getElementById('menu-for-ph');
     click.addEventListener('click', function() {
-        if (menu.style.display != "flex") {
-            menu.style.display = "flex";
-        } else {
-            menu.style.display = "none";
-        }
+        menu.style.transform = "translateY(0)"
     });
     let close = document.getElementById('cross');
     close.addEventListener('click', function() {
-        menu.style.display = "none"
+        menu.style.transform = "translateY(-90vh)"
     })
 
 
