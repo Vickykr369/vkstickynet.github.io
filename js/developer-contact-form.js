@@ -35,7 +35,7 @@ let Allinpts_ = document.querySelectorAll('input')
 
 document.addEventListener('contextmenu', e => {
 e.preventDefault();
-    swal("Context menu disabled by developer",'','info')
+    swal("Context menu disabled by developer","Don't use right click",'info')
 })
 
 let audio = new Audio;
