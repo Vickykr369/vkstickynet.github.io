@@ -63,6 +63,10 @@ close_form.addEventListener('click', () => {
     main_frm.style.transform = 'translateY(-100vh)'
     nav.style.visibility = "visible"
     menu.style.visibility = "visible"
+    txtareao.value = ""
+    Issues.value = ""
+    Allinpts_.forEach(input => input.value = "")
+    
 })
 
 submit.addEventListener('click', () => {
