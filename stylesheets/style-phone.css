@@ -1,0 +1,145 @@
+ #navigations {
+     display: none;
+ }
+ 
+ #mobile-ham {
+     display: flex;
+     width: 30vw;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ #mobile-ham i {
+     font-size: 45px;
+ }
+ 
+ #register {
+     width: fit-content;
+     position: absolute;
+     right: 0;
+ }
+ 
+ #designs {
+     width: 100vw;
+     height: auto;
+     background-color: rgba(0, 0, 0, 0.8);
+ }
+ 
+ #designs li a {
+     color: white;
+ }
+ 
+ #i {
+     display: inline;
+     width: 30vw;
+     display: flex;
+     justify-content: center;
+     padding-left: 0;
+     margin-left: 10px;
+ }
+ 
+ @media (min-width:0px) and (max-width:430px) {
+     #logo {
+         display: none;
+     }
+     #i {
+         padding-left: 0px;
+         margin-left: -20px;
+     }
+ }
+ 
+ #menu-for-ph {
+     display: flex;
+     position: fixed;
+     top: 0px;
+     background-color: rgba(0, 0, 0, 0.7);
+     width: 100vw;
+     height: 80vh;
+     display: flex;
+     flex-direction: column;
+     border-bottom-left-radius: 8px;
+     border-radius: 8px;
+     transition-duration: 1s;
+     transform: translateY(-100vh);
+ }
+ 
+ #menu-for-ph a,
+ #menu-for-ph p,
+ #menu-for-ph li {
+     list-style: none;
+     text-decoration: none;
+     color: white;
+     margin: auto;
+     padding: 15px;
+ }
+ 
+ #child {
+     margin: auto;
+     padding-top: 75px;
+     padding-bottom: 10vh;
+ }
+ 
+ #child li a i,
+ #child li p i {
+     color: white;
+ }
+ 
+ .follow a i {
+     color: cyan;
+ }
+ 
+ .follow a {
+     display: inline;
+ }
+ 
+ #i i {
+     font-size: 30px;
+     cursor: pointer;
+ }
+ 
+ .follow {
+     padding-top: 50px;
+ }
+ 
+ #cross {
+     width: 30px;
+     height: 30px;
+     position: absolute;
+     right: 30px;
+     top: 70px;
+     cursor: pointer;
+ }
+ 
+ #sign-up {
+     display: flex;
+     position: fixed;
+     top: 0;
+     width: 100vw;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     background-color: rgba(0, 0, 0, 0.5);
+     display: none;
+ }
+ 
+ #inputs {
+     width: 80vw;
+     background-color: white;
+     border-radius: 4px;
+     position: absolute;
+     top: 15px;
+ }
+ 
+ #login-input {
+     width: 90vw;
+ }
+ 
+ #login-input input {
+     width: 98%;
+     font-size: 17px;
+ }
+ 
+ #contact-for-phone {
+     margin: 0;
+     padding: 0;
+ }
