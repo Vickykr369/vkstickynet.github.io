@@ -35,7 +35,7 @@ let Allinpts_ = document.querySelectorAll('input')
 
 
 let audio = new Audio;
-audio.src = "audios/Piggyback.ogg";
+audio.src = "../audios/Piggyback.ogg";
 
 
 contactBtn.addEventListener('click', () => {
