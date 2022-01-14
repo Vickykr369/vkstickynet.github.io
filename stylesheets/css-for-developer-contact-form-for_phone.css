@@ -1,0 +1,24 @@
+#manager {
+    width: 90vw;
+}
+
+.Minpss {
+    width: 70%;
+}
+
+#lbl-mp {
+    text-align: center;
+}
+
+@media (min-width:0px) and (max-width:350px) {
+    #control-form {
+        width: 100vw;
+    }
+    .cntd {
+        width: 80%;
+    }
+}
+
+#developer {
+    width: 90vw;
+}
