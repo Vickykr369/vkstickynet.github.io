@@ -12,7 +12,6 @@ let alert2 = document.getElementById('al-2')
 let passworD = document.getElementById('pass-d');
 let alert3 = document.getElementById('al-3')
 let Issues = document.getElementById('txt--area');
-let submit = document.getElementById('dev-fm-submit')
 let Allinputs = document.getElementsByClassName('cntd')
 let show_P = document.getElementById('show-d-p')
 let usrname = document.getElementById('M-username');
@@ -23,14 +22,20 @@ let alert001 = document.getElementById('err1');
 let alert002 = document.getElementById('err2');
 let alert003 = document.getElementById('err3');
 let alert004 = document.getElementById('err4');
-let subhmmbtn = document.getElementById('M-submit')
 let showMp = document.getElementById('show-M-p');
 let mangerPass = document.getElementById('M-password');
 let Manager_Contct = document.getElementById('manager-cntact');
 let contactforPhone = document.getElementById('contact-for-phone');
 let menu = document.getElementById('menu-for-ph');
+let Submit_btn_M = document.getElementById('M-submit');
+let submit = document.getElementById('dev-fm-submit');
+let Allinpts_ = document.querySelectorAll('input')
 
 
+
+
+let audio = new Audio;
+audio.src = "audios/Piggyback.ogg";
 
 
 contactBtn.addEventListener('click', () => {
@@ -39,6 +44,8 @@ contactBtn.addEventListener('click', () => {
     nav.style.visibility = "hidden"
     Cdeveloper.style.backgroundColor = "rgba(6, 212, 6, 0.938)"
     Cmanager.style.backgroundColor = "white"
+    frm_manger.style.display = "none"
+    frm_developer.style.display = "block"
 })
 
 Manager_Contct.addEventListener('click', () => {
@@ -47,6 +54,7 @@ Manager_Contct.addEventListener('click', () => {
     Cmanager.style.backgroundColor = "rgba(6, 212, 6, 0.938)"
     frm_manger.style.display = "block"
     frm_developer.style.display = "none"
+
     Cdeveloper.style.backgroundColor = "white"
 })
 
@@ -94,12 +102,6 @@ show_P.addEventListener('click', () => {
     // ---------------------------------------------------------------------------------------------//
 
 
-
-
-
-
-
-
 showMp.addEventListener('click', () => {
     if (mangerPass.type != "text") {
         mangerPass.type = "text"
@@ -108,7 +110,7 @@ showMp.addEventListener('click', () => {
     }
 })
 
-subhmmbtn.addEventListener('click', () => {
+Submit_btn_M.addEventListener('click', () => {
     if (usrname.value == "") {
         alert001.style.display = "block"
         usrname.style.borderColor = "red"
@@ -164,3 +166,40 @@ contactforPhone.addEventListener('click', () => {
     menu.style.visibility = "hidden"
         // Cdeveloper.style.backgroundColor = "rgba(6, 212, 6, 0.938)"
 })
+
+// ----functions-----------
+function messagess1() {
+    swal('Hey', 'Manager has received your contact form successfully', 'success')
+    audio.play()
+
+}
+
+function messagess2() {
+    swal('Hey', 'Developer has received your contact form successfully', 'success')
+    audio.play()
+}
+
+
+Submit_btn_M.addEventListener('click', () => {
+    if (txtareao.value == "") {
+        swal('No issue found', '', 'error')
+        navigator.vibrate(500);
+    } else {
+        setTimeout(messagess1, 10000);
+        Allinpts_.forEach(input => input.value = "")
+        txtareao.value = ""
+
+    }
+
+
+});
+submit.addEventListener('click', () => {
+    if (Issues.value == "") {
+        swal('No issue found', '', 'error')
+        navigator.vibrate(500);
+    } else {
+        setTimeout(messagess2, 10000);
+        Allinpts_.forEach(input => input.value = "")
+        Issues.value = ""
+    }
+});
