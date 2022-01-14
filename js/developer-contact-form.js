@@ -31,16 +31,17 @@ let Submit_btn_M = document.getElementById('M-submit');
 let submit = document.getElementById('dev-fm-submit');
 let Allinpts_ = document.querySelectorAll('input')
 
+// --------------- -----------------------------
 
-
+document.addEventListener('contextmenu', e => {
+e.preventDefault();
+})
 
 let audio = new Audio;
 audio.src = "audios/Piggyback.ogg";
 
-
 contactBtn.addEventListener('click', () => {
-
-    main_frm.style.transform = 'translateY(0)'
+main_frm.style.transform = 'translateY(0)'
     nav.style.visibility = "hidden"
     Cdeveloper.style.backgroundColor = "rgba(6, 212, 6, 0.938)"
     Cmanager.style.backgroundColor = "white"
@@ -54,19 +55,16 @@ Manager_Contct.addEventListener('click', () => {
     Cmanager.style.backgroundColor = "rgba(6, 212, 6, 0.938)"
     frm_manger.style.display = "block"
     frm_developer.style.display = "none"
-
-    Cdeveloper.style.backgroundColor = "white"
+  Cdeveloper.style.backgroundColor = "white"
 })
 
 close_form.addEventListener('click', () => {
     main_frm.style.transform = 'translateY(-100vh)'
     nav.style.visibility = "visible"
     menu.style.visibility = "visible"
-
 })
 
 submit.addEventListener('click', () => {
-
     if (PhoneNo.value == "") {
         alert1.style.display = "block"
         PhoneNo.style.borderColor = "red"
@@ -88,19 +86,16 @@ submit.addEventListener('click', () => {
         alert3.style.display = "none"
         Issues.style.borderColor = "cyan"
     }
-
-
 })
+
 show_P.addEventListener('click', () => {
         if (passworD.type != "text") {
             passworD.type = "text"
         } else {
             passworD.type = "password"
         }
-
     })
     // ---------------------------------------------------------------------------------------------//
-
 
 showMp.addEventListener('click', () => {
     if (mangerPass.type != "text") {
@@ -147,18 +142,14 @@ Cdeveloper.addEventListener('click', () => {
     Cmanager.style.backgroundColor = "white"
     frm_developer.style.display = "block"
     frm_manger.style.display = "none"
-
-
 })
+
 Cmanager.addEventListener('click', () => {
     Cmanager.style.backgroundColor = "rgba(6, 212, 6, 0.938)"
     Cdeveloper.style.backgroundColor = "white"
     frm_manger.style.display = "block"
     frm_developer.style.display = "none"
-
 })
-
-
 
 // let text = "Free Web Building Tutorials!"; let result = text.link("https://www.rmpublicschool.org"); document.getElementById("demo1").innerHTML = result;
 contactforPhone.addEventListener('click', () => {
@@ -171,14 +162,12 @@ contactforPhone.addEventListener('click', () => {
 function messagess1() {
     swal('Hey', 'Manager has received your contact form successfully', 'success')
     audio.play()
-
 }
 
 function messagess2() {
     swal('Hey', 'Developer has received your contact form successfully', 'success')
     audio.play()
 }
-
 
 Submit_btn_M.addEventListener('click', () => {
     if (txtareao.value == "") {
@@ -188,10 +177,7 @@ Submit_btn_M.addEventListener('click', () => {
         setTimeout(messagess1, 10000);
         Allinpts_.forEach(input => input.value = "")
         txtareao.value = ""
-
     }
-
-
 });
 submit.addEventListener('click', () => {
     if (Issues.value == "") {
