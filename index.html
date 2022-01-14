@@ -7,15 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/5629bc16ce.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="shortcut icon" href="images&icons/lgo.png" type="image/x-icon">
     <!-- css  -->
     <link rel="stylesheet" href="stylesheets/stylesheet.css">
     <link rel="stylesheet" href="stylesheets/style-phone.css" media="screen and (max-width:950px)">
     <link rel="stylesheet" href="stylesheets/css-for-developer-contact-form.css">
+    <link rel="stylesheet" href="stylesheets/css-for-developer-contact-form-for_phone.css" media="screen and (max-width:950px)">
 
 </head>
 
 <body>
-    <nav>
+    <nav id="nav--">
 
         <div id="logo">
             <a href=""> <img src="images&icons/lgo.png" alt="Not available" draggable="false"></a>
@@ -30,13 +32,17 @@
                 <div id="drop-down-for-contact">
                     <div id="arrow-up"></div>
                     <ul>
-                        <li><a href="">Manager / Owner</a></li>
-                        <li><a href="">Developer</a></li>
+                        <li>
+                            <p id="manager-cntact">Manager / Owner</p>
+                        </li>
+                        <li>
+                            <p id="developer-contact">Developer</p>
+                        </li>
                     </ul>
                 </div>
             </li>
             <li><a href="about-us.html">About us</a></li>
-            <li><a href="feedback/feedback.html">Feedback</a></li>
+            <li><a href="">Feedback</a></li>
             <li id="extrnl-link">
                 <p>Follow us&nbsp;<i id="angle-down-2" class="fas fa-angle-down"></i></p>
                 <div id="drop-down-box">
@@ -78,14 +84,14 @@
             <li class="lis">
                 <a href=""> <i class="fas fa-home"></i> Home</a>
             </li>
-            <li>
-                <a href="contact-us.html/contact-developer.html"> <i class="far fa-address-book"></i> Contact us </a>
+            <li id="contact-for-phone">
+                <p> <i class="far fa-address-book"></i> Contact us </p>
             </li>
             <li class="lis">
                 <a href="about-us.html"> <i class="fas fa-info-circle"></i> About us</a>
             </li>
             <li class="lis">
-                <a href="feedback/feedback.shtml"> <i class="fas fa-comment-alt"></i> Feedback</a>
+                <a href=""> <i class="fas fa-comment-alt"></i> Feedback</a>
             </li>
             <span class="follow">
                 <p style="text-align: center;">Follow us on</p>
@@ -149,22 +155,51 @@
     </div>
     <!-- ------------------------------------------------------------------------------------------------------- -->
     <div id="dev-cont">
+        <div id="control-form">
+            <span id="developertab" class="tabss">Developer</span>
+            <span id="managertab" class="tabss">Manager / Owner</span>
+        </div>
+        <img src="images&icons/cancel.png" alt="X" srcset="" width="30" height="30" id="cross-d-c">
         <div id="developer">
             <div id="inputss">
-                <input type="text" id="no.-d" placeholder="Enter your phone number" class="cntd">
-                <div id="password-d"><input type="password" id="pass-d" placeholder="Your password" class="cntd">
-                    <img id="show-d-p" src="images&icons/eye.webp"></img>
-                </div>
+                <p id="al-1" class="nt-fill">Required*</p>
+                <input type="tel" id="no.-d" placeholder="Enter your phone number" class="cntd">
+                <p id="al-2" class="nt-fill">Required*</p>
+                <input type="password" id="pass-d" placeholder="Your password" class="cntd">
+                <input type="checkbox" name="" id="show-d-p" style="accent-color: cyan;"><label for="show-d-p" id="lbl-d" style="color: aquamarine;padding-left: 5px;display: inline;">Show password</label>
+                <p id="al-3" class="nt-fill">Required*</p>
 
-                <textarea id="txt--area" placeholder="Yours issue" class="cntd"></textarea>
+                <textarea id="txt--area" placeholder="Tell us your issue" class="cntd"></textarea>
+                <button id="dev-fm-submit">Submit</button>
             </div>
         </div>
+        <div id="manager">
+
+            <p id="err1" class="ers">Require*</p>
+            <input type="text" id="M-username" placeholder="Enter your registered name" class="Minpss">
+            <p id="err2" class="ers">Require*</p>
+            <input type="tel" id="M-phone" placeholder="Enter your phone number" class="Minpss">
+            <p id="err3" class="ers">Require*</p>
+            <input type="password" id="M-password" placeholder="Enter your password" class="Minpss">
+            <input type="checkbox" id="show-M-p"><label for="show-M-p" id="lbl-mp">Show password</label>
+            <p id="err4" class="ers">Require*</p>
+            <textarea id="M-txtarea" placeholder="Tell us your issue" class="Minpss"></textarea>
+
+
+
+
+            <button id="M-submit">Submit</button>
+
+
+        </div>
+    </div>
 </body>
 
 
 <!-- javascript codes -->
 <script src="js/script.js"></script>
 <script src="js/login-form-codes.js"></script>
+<script src="js/developer-contact-form.js"></script>
 
 
 </html>
