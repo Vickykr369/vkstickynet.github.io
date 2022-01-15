@@ -148,7 +148,7 @@ Submit_btn_M.addEventListener('click', () => {
     }
 
 });
-anchors.target = "blank";
+
 Cdeveloper.addEventListener('click', () => {
     Cdeveloper.style.backgroundColor = "rgba(6, 212, 6, 0.938)"
     Cmanager.style.backgroundColor = "white"
