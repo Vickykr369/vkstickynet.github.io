@@ -66,6 +66,8 @@ close_form.addEventListener('click', () => {
     txtareao.value = ""
     Issues.value = ""
     Allinpts_.forEach(input => input.value = "")
+    submit.innerHTML = "Submit"
+    Submit_btn_M.innerHTML = "Submit"
     
 })
 
@@ -182,7 +184,7 @@ Submit_btn_M.addEventListener('click', () => {
         setTimeout(messagess1, 10000);
         Allinpts_.forEach(input => input.value = "")
         txtareao.value = ""
-        Submit_btn_M.innerHTML = "<button>Submitted</button>"
+        Submit_btn_M.innerHTML = "Submitted"
     }
 });
 submit.addEventListener('click', () => {
@@ -193,6 +195,6 @@ submit.addEventListener('click', () => {
         setTimeout(messagess2, 10000);
         Allinpts_.forEach(input => input.value = "")
         Issues.value = ""
-        submit.innerHTML = "<button>Submitted</button>"
+        submit.innerHTML = "Submitted"
     }
 });
