@@ -32,6 +32,8 @@ let submit = document.getElementById('dev-fm-submit');
 let Allinpts_ = document.querySelectorAll('input')
 let yt1 = document.getElementById('yt-')
 let yt2 = document.getElementById('yt-desktop')
+let anchors = document.querySelectorAll('a')
+
 
 // --------------- -----------------------------
 
@@ -145,7 +147,8 @@ Submit_btn_M.addEventListener('click', () => {
         txtareao.style.borderColor = "green"
     }
 
-})
+});
+anchors.target = "blank";
 Cdeveloper.addEventListener('click', () => {
     Cdeveloper.style.backgroundColor = "rgba(6, 212, 6, 0.938)"
     Cmanager.style.backgroundColor = "white"
