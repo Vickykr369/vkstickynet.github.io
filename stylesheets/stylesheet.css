@@ -95,7 +95,7 @@
         padding: 20px;
     }
     
-    #drop-down-box a {
+    #drop-down-box a, #yt-desktop {
         /* color: white; */
         text-decoration: none;
     }
@@ -127,7 +127,7 @@
         z-index: 11;
     }
     
-    #drop-down-box ul li a {
+    #drop-down-box ul li a,#yt-desktop {
         color: white;
         z-index: 10;
     }
