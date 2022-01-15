@@ -129,3 +129,14 @@
     });
 
 }
+
+let click1 = document.getElementById('yt-desktop);
+let click2 = document.getElementById('yt-');
+click1.addEventListener('click', () => {
+        swal('Sorry','User do not have channel','info')
+    });
+click2.addEventListener('click', () => {
+        swal('Sorry','User do not have channel','info')
+    });
+
+                                     
