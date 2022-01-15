@@ -30,8 +30,7 @@ let menu = document.getElementById('menu-for-ph');
 let Submit_btn_M = document.getElementById('M-submit');
 let submit = document.getElementById('dev-fm-submit');
 let Allinpts_ = document.querySelectorAll('input')
-let yt1 = document.getElementById('yt-')
-let yt2 = document.getElementById('yt-desktop')
+
 let anchors = document.querySelectorAll('a')
 
 
@@ -203,9 +202,3 @@ submit.addEventListener('click', () => {
         submit.innerHTML = "Submitted"
     }
 });
-yt1.addEventListener('click',() => {
-    Swal('Sorry','User do not have any channel','info')
-})
-yt2.addEventListener('click',() => {
-    Swal('Sorry','User do not have any channel','info')
-})
