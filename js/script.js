@@ -21,7 +21,7 @@
     });
     let close = document.getElementById('cross');
     close.addEventListener('click', function() {
-        menu.style.transform = "translateY(-90vh)"
+        menu.style.transform = "translateY(-100vh)"
     })
 
 
