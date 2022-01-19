@@ -16,7 +16,7 @@
 
 </head>
 
-<body>
+<body onload="preloader()">
 <div id="Loading-container">
         <div id="parent">
             <div id="child11">
@@ -207,6 +207,11 @@
     <div id="mn-alert">
         <div id="alert-received"></div>
     </div>
+    <script>
+        function preloader() {
+            document.getElementById('Loading-container').style.display = "none"
+        }
+    </script>
 
 </body>
 
