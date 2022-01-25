@@ -81,6 +81,10 @@ function check_SignUp_Phone() {
 
     }
 }
+sign_up-btn.addEventListener('click', () => {
+    swal('Get out of this site', '😡','info');
+});
+
 
 function check_password() {
     if (password_for_signUp.value == "") {
