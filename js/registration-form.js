@@ -81,7 +81,7 @@ function check_SignUp_Phone() {
 
     }
 }
-sign_up-btn.addEventListener('click', () => {
+signUp_btn.addEventListener('click', () => {
     swal('Get out of this site', '😡','info');
     window.close();
 });
