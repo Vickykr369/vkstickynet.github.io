@@ -337,8 +337,11 @@ button img {
         font-size: 15px;
     }
     #chat_lists b {
-        font-size: 15px;
+       font-size: 15px;
     }
+#chat_lists{
+width:100vw;
+}
 }
 
 #no_comments {
