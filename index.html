@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5629bc16ce.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="shortcut icon" href="images&icons/lgo.png" type="image/x-icon">
+    <link rel="stylesheet" href="stylesheets/stylesheet.css">
+    <link rel="stylesheet" href="stylesheets/style-phone.css" media="screen and (max-width:950px)">
+    <link rel="stylesheet" href="stylesheets/css-for-developer-contact-form.css">
+    <link rel="stylesheet" href="stylesheets/css-for-developer-contact-form-for_phone.css" media="screen and (max-width:950px)">
+
+</head>
+
+<body onload="preloader()">
+    <!-- preloader -->
+    <div id="Loading-container">
+        <div id="parent">
+            <div id="child11">
+
+            </div>
+
+        </div>
+        <p id="loading-txt">LOADING......</p>
+    </div>
+    <!-- -------------------------  -->
+    <nav id="nav--">
+
+        <div id="logo">
+            <a href=""> <img src="images&icons/lgo.png" alt="Not available" draggable="false"></a>
+        </div>
+
+
+        </div>
+        <div id="navigations">
+            <li><a href="">Home</a></li>
+            <li id="cntct">
+                <p>Contact us <i id="angle-down-1" class="fas fa-angle-down"></i></p>
+                <div id="drop-down-for-contact">
+                    <div id="arrow-up"></div>
+                    <ul>
+                        <li>
+                            <p id="manager-cntact">Manager / Owner</p>
+                        </li>
+                        <li>
+                            <p id="developer-contact">Developer</p>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="about-us.html">About us</a></li>
+            <li><a href="">Feedback</a></li>
+            <li id="extrnl-link">
+                <p>Follow us&nbsp;<i id="angle-down-2" class="fas fa-angle-down"></i></p>
+                <div id="drop-down-box">
+                    <div id="arrow"></div>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/Vickykr369/Vickykr369" target="_blank"> <i class="fab fa-github"></i> Github</a>
+                        </li>
+                        <li> <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i>  Youtube</a></li>
+                        <li><a href="https://www.instagram.com/__vicky_36/?hl=en" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100076992771479" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="https://twitter.com/Vicky_Kr_Gupta" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+
+                    </ul>
+                </div>
+            </li>
+        </div>
+        <div id="register">
+            <span id="registeration-btn"><i class="fas fa-user-plus"></i>&nbsp;Register</span>
+        </div>
+        <span id="time">  
+             <p id="hour" ></p>
+             <p id="minute"></p>
+             <p id="second"></p>
+             <div id="drp-tm">
+                 <div></div>  
+                 <nt>
+                 <p id="drp-hour" > </p>
+                 <p id="drp-minute"> </p>
+                 <p id="drp-second"> </p> 
+                 
+
+                 </nt>
+                </div>
+        </span>
+        <div id="i"><i class="fas fa-bars">  </i></div>
+    </nav>
+    <!-- mobile-menu -->
+    <div id="menu-for-ph">
+        <img src="images&icons/cancel.png" alt="X" id="cross" class="sssss">
+        <div id="child">
+            <li class="lis">
+                <a href=""> <i class="fas fa-home"></i> Home</a>
+            </li>
+            <li id="contact-for-phone">
+                <p id="cntact-phone"> <i class="far fa-address-book"></i> Contact us </p>
+            </li>
+            <li class="lis">
+                <a href="about-us.html"> <i class="fas fa-info-circle"></i> About us</a>
+            </li>
+            <li class="lis">
+                <a href=""> <i class="fas fa-comment-alt"></i> Feedback</a>
+            </li>
+            <span class="follow">
+                <p style="text-align: center;">Follow us on</p>
+                <a href="https://github.com/Vickykr369/Vickykr369" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/__vicky_36/?hl=en" target="_blank"> <i class="fab fa-instagram"></i> </a>
+            <a href="https://www.facebook.com/profile.php?id=100076992771479" target="_blank"> <i class="fab fa-facebook"></i> </a>
+            <a href="https://twitter.com/Vicky_Kr_Gupta" target="_blank"> <i class="fab fa-twitter"></i> </a>
+            </span>
+        </div>
+
+    </div>
+
+
+
+    <!-- -------------------------------------------------------------------------------------------- -->
+
+    <!-- registration form here -->
+    <div id="register_form">
+        <img src="images&icons/cancel.png" alt="X" id="Close_registeration" class="sssss">
+        <div id="form-navigator">
+            <span id="sign-up" class="member">Sign up</span>
+            <span id="login" class="member">Login</span>
+        </div>
+        <div id="sign_up-form-container">
+            <input type="text" placeholder="Enter your name" id="username" class="User-info">
+            <label for="username" class="errorSignUp" id="NameError"></label>
+
+            <input type="email" placeholder="Enter your Email" id="user-email" class="User-info">
+            <label for="user-email" class="errorSignUp" id="EmailError"></label>
+
+            <input type="tel" placeholder="Enter your phone number here" id="phone-number" class="User-info">
+            <label for="phone-number" class="errorSignUp" id="PhoneError"></label>
+
+            <div class="User-password" id="pass.value"><input type="password" placeholder="Create a password with more than 10 characters" id="user-password">
+
+                <i class="fas fa-eye" id="show-pass-word-btn"></i>
+            </div>
+            <label for="user-password" class="errorSignUp" id="errpass2"></label>
+
+            <input type="password" placeholder="Re-enter your password" id="user-password-repeat" class="User-info">
+            <label class="errorSignUp" id="repeatError">Password didn't matched</label>
+            <div id="signup-btn-div"><button id="sign_up-btn">Sign Up</button></div>
+        </div>
+        <div id="login-form-container">
+            <input type="text" placeholder="Enter your registered name" id="Username-for-login" class="LoginUser-info">
+            <input type="tel" placeholder="Enter the registered phone number here" id="phone-number-for-login" class="LoginUser-info">
+            <div class="LoginUser-password"><input type="password" placeholder="Enter your password" id="user-password-for-login">
+                <i class="fas fa-eye" id="show-login-password-btn"></i>
+            </div>
+            <div id="lgn-btn-div"><button id="login-btn">Login</button></div>
+        </div>
+    </div>
+    </div>
+    <!-- ------------------------------------------------------------------------------------------------------- -->
+    <div id="dev-cont">
+        <div id="control-form">
+            <span id="developertab" class="tabss">Developer</span>
+            <span id="managertab" class="tabss">Manager / Owner</span>
+        </div>
+        <img src="images&icons/cancel.png" alt="X" srcset="" width="30" height="30" id="cross-d-c" class="sssss">
+        <div id="developer">
+            <div id="inputss">
+                <p id="al-1" class="nt-fill">Required*</p>
+                <input type="tel" id="no.-d" placeholder="Enter your phone number" class="cntd">
+                <p id="al-2" class="nt-fill">Required*</p>
+                <input type="password" id="pass-d" placeholder="Your password" class="cntd">
+                <input type="checkbox" name="" id="show-d-p" style="accent-color: cyan;"><label for="show-d-p" id="lbl-d" style="color: aquamarine;padding-left: 5px;display: inline;">Show password</label>
+                <p id="al-3" class="nt-fill">Required*</p>
+
+                <textarea id="txt--area" placeholder="Tell us your issue" class="cntd"></textarea>
+                <button id="dev-fm-submit">Submit</button>
+            </div>
+        </div>
+        <div id="manager">
+
+            <p id="err1" class="ers">Require*</p>
+            <input type="text" id="M-username" placeholder="Enter your registered name" class="Minpss">
+            <p id="err2" class="ers">Require*</p>
+            <input type="tel" id="M-phone" placeholder="Enter your phone number" class="Minpss">
+            <p id="err3" class="ers">Require*</p>
+            <input type="password" id="M-password" placeholder="Enter your password" class="Minpss">
+            <input type="checkbox" id="show-M-p"><label for="show-M-p" id="lbl-mp">Show password</label>
+            <p id="err4" class="ers">Require*</p>
+            <textarea id="M-txtarea" placeholder="Tell us your issue" class="Minpss"></textarea>
+            <button id="M-submit">Submit</button>
+        </div>
+    </div>
+    <div id="mn-alert">
+        <div id="alert-received"></div>
+    </div>
+
+    <script>
+        function preloader() {
+            document.getElementById('Loading-container').style.display = "none"
+        }
+    </script>
+</body>
+
+
+<!-- javascript codes -->
+<script src="js/script.js"></script>
+<script src="js/registration-form.js"></script>
+<script src="js/developer-contact-form.js"></script>
+
+
+</html>
